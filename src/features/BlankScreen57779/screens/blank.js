@@ -21,7 +21,7 @@ export class _Blank extends React.Component {
   state = {
     Datepicker_3: new Date("07/03/2020"),
     Radio_6: true,
-    CheckBox_7: true,
+    CheckBox_7: false,
     Input_8: "",
     Toggle_9: true
   }
@@ -192,7 +192,7 @@ export class _Blank extends React.Component {
       />
       <Radio
         text="Radio button"
-        disabled={false}
+        disabled={true}
         style={{
           marginLeft: 0,
           marginRight: 0,
