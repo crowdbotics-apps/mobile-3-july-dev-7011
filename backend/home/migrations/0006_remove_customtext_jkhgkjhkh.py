@@ -6,12 +6,9 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0005_remove_customtext_hjgjgjg'),
+        ("home", "0005_remove_customtext_hjgjgjg"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='customtext',
-            name='jkhgkjhkh',
-        ),
+        migrations.RemoveField(model_name="customtext", name="jkhgkjhkh",),
     ]
