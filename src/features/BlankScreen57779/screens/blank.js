@@ -79,7 +79,7 @@ export class _Blank extends React.Component {
           verticalAlign: "baseline",
           fontSize: 20,
           color: "#000000",
-          backgroundColor: "#3366FF",
+          backgroundColor: "#83b030",
           fontStyle: "normal",
           fontWeight: "normal",
           fontFamily: "System",
@@ -183,8 +183,8 @@ export class _Blank extends React.Component {
           borderBottomWidth: 0,
           borderRadius: 0,
           fontSize: 20,
-          color: "#000000",
-          backgroundColor: "#ffffff",
+          color: "#a10c0c",
+          backgroundColor: "#eff098",
           fontStyle: "normal",
           fontWeight: "normal",
           fontFamily: "System"
@@ -283,8 +283,8 @@ export class _Blank extends React.Component {
         onChangeText={nextValue => this.setState({ Input_8: nextValue })}
       />
       <Toggle
-        activeColor="#409EFF"
-        inactiveColor="#C0CCDA"
+        activeColor="#4aeb1e"
+        inactiveColor="#ca180c"
         disabled={false}
         text="switch ON/OFF"
         style={{
