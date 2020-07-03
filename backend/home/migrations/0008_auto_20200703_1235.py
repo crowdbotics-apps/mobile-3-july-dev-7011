@@ -9,28 +9,46 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0007_customtext_jkhgkjhkh'),
+        ("home", "0007_customtext_jkhgkjhkh"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='customtext',
-            name='dfqeas',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_dfqeas', to=settings.AUTH_USER_MODEL),
+            model_name="customtext",
+            name="dfqeas",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_dfqeas",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='ergfwsd',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_ergfwsd', to='home.HomePage'),
+            model_name="customtext",
+            name="ergfwsd",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_ergfwsd",
+                to="home.HomePage",
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='ffgwerg',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_ffgwerg', to='home.CustomText'),
+            model_name="customtext",
+            name="ffgwerg",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_ffgwerg",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='fgwtrhg',
+            model_name="customtext",
+            name="fgwtrhg",
             field=models.SmallIntegerField(blank=True, null=True),
         ),
     ]
