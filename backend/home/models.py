@@ -9,6 +9,28 @@ from django.db import models
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
     jkhgkjhkh = models.TextField(null=True, blank=True,)
+    fgwtrhg = models.SmallIntegerField(null=True, blank=True,)
+    ffgwerg = models.ForeignKey(
+        "home.CustomText",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_ffgwerg",
+    )
+    ergfwsd = models.ForeignKey(
+        "home.HomePage",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_ergfwsd",
+    )
+    dfqeas = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_dfqeas",
+    )
 
     def __str__(self):
         return self.title
